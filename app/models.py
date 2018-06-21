@@ -4,3 +4,7 @@ from django.contrib.auth.models import AbstractUser
 # Create your models here.
 class User(AbstractUser):
     pass
+
+class Timestamp(models.Model):
+    create = models.DateTimeField(auto_now_add=True)
+    
